@@ -1,8 +1,17 @@
 
 header {
-    height: 100vh;
-    padding-top: 7rem;
+    min-height: 100vh;
+    padding: 100px 10%;
     overflow: hidden;
+}
+
+.h-content{
+    align-items: left;
+    justify-content: left;
+}
+
+span {
+    color: var(--color-hover);
 }
 
 .hContainer {
