@@ -1,4 +1,3 @@
-import React from "react";
 // import CallToAction from './CallToAction'
 import FloatWriter from "./FloatWriter";
 import "./Header.css";
@@ -8,10 +7,10 @@ const Header = () => {
   return (
     <header id="h-hero" className="h-hero flex">
       <div className="h-content">
-        <h1 className="text-4xl">Hi! I'm Favour Maxwell</h1>
+        <h1 className="text-4xl">Hi! I&lsquo;m Favour Maxwell</h1>
         <div className="flex">
           <h1 className=" [letter-spacing:2px] font-semibold text-2xl">
-            And I'm a &nbsp;
+            And I&lsquo;m a &nbsp;
           </h1>
           <FloatWriter />
         </div>
