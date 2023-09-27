@@ -1,18 +1,32 @@
+<<<<<<< HEAD
 import React from "react";
 import FloatWriter from "./FloatWriter";
 import "./Header.css";
 import boy from "../../assets/img/boy.png";
 import { FaLinkedinIn, FaWhatsapp, FaTwitter } from "react-icons/fa";
 import Blob from './Blob'
+=======
+// import CallToAction from './CallToAction'
+import FloatWriter from "./FloatWriter";
+import "./Header.css";
+// import { useState } from "react";
+>>>>>>> 030a7ee22945c16e738f005fade259005b15f93f
 
 const Header = () => {
   return (
     <header id="h-hero" className="h-hero flex">
       <div className="h-content">
+<<<<<<< HEAD
         <h1 className="text-4xl font-bold">Hi! I'm Favour Maxwell</h1>
         <div className="flex">
           <h1 className="inline-flex [letter-spacing:2px] font-semibold text-2xl">
             And I'm{" "}
+=======
+        <h1 className="text-4xl">Hi! I&lsquo;m Favour Maxwell</h1>
+        <div className="flex">
+          <h1 className=" [letter-spacing:2px] font-semibold text-2xl">
+            And I&lsquo;m a &nbsp;
+>>>>>>> 030a7ee22945c16e738f005fade259005b15f93f
           </h1>
           <FloatWriter />
         </div>
@@ -23,6 +37,7 @@ const Header = () => {
             nesciunt deleniti
           </span>
         </p>
+<<<<<<< HEAD
         <div className="contact font-medium">
           <div className="email-info">
             <h5 className="text-white font-bold">Email:</h5>
@@ -35,10 +50,24 @@ const Header = () => {
             type="download"
             value={"Image"}
             onClick={(e) => {
+=======
+        <div className="contact">
+          <a href={<contact />}>
+            Email:
+            <span>makzymaxwell@gmail.com</span>
+          </a>
+        </div>
+        <div className="btn-buttons">
+          <button
+            type="download"
+            value={"Image"}
+            onClick={e => {
+>>>>>>> 030a7ee22945c16e738f005fade259005b15f93f
               setDownloadCv(downloadCV);
               setDownloadCv(e.target.value);
             }}
           >
+<<<<<<< HEAD
             {" "}
             Download CV
           </button>
@@ -66,6 +95,36 @@ const Header = () => {
         <div className="liquid-shape">
           <Blob />
         </div>
+=======
+            {" "}Download CV
+          </button>
+          <button type="email" onClick={() => <contact />}>
+            {" "}Hire Me
+          </button>
+        </div>
+        <div className="socialIcons">
+          <ul>
+            <li>
+              <a className="" aria-current="page" to="linkedin">
+                linkedin
+              </a>
+            </li>
+            <li>
+              <a className="" aria-current="page" to="Whatsapp">
+                Whatsapp
+              </a>
+            </li>
+            <li>
+              <a className="" aria-current="page" to="twitter">
+                twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img src={".././assets/img/boy.png"} alt="boy" />
+>>>>>>> 030a7ee22945c16e738f005fade259005b15f93f
       </div>
     </header>
   );
