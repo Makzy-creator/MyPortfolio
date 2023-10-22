@@ -1,7 +1,9 @@
-// import CallToAction from './CallToAction'
+import React from "react";
 import FloatWriter from "./FloatWriter";
 import "./Header.css";
-// import { useState } from "react";
+import boy from "../../assets/img/boy.png";
+import { FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa";
+import Blob from './Blob'
 
 const Header = () => {
   return (
@@ -47,7 +49,7 @@ const Header = () => {
         </div>
         <div className="socialIcons flex max-w-max mx-auto lg:mx-0">
           <a href="#" aria-current="page">
-            <FaLinkedinIn />
+            <FaLinkedin />
           </a>
           <a href="#" aria-current="page">
             <FaWhatsapp />
