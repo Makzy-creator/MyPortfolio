@@ -1,29 +1,25 @@
-
 header {
-    min-height: 100vh;
-    padding: 100px 10%;
-    overflow: hidden;
+    padding: 50px 10%;
 }
 
-.h-hero{
+.h-home{
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: (2,1fr);
-    align-items: center;
-    grid-gap: 4em;
-}
-
-span {
-    color: var(--color-hover);
+    flex-direction: row;
+    justify-content: center;
 }
 
 .h-content {
     max-width: 600px;
 }
 
+/* .h-content h1{
+    font-weight:700;
+} */
+
 .h-content p {
+    color: #bdbdbd;
     line-height: 1.6;
     margin-top: -2em;
 }
@@ -31,66 +27,23 @@ span {
 .contact {
     display: inline-flex;
     justify-content: space-between;
+    width: 300px;
     margin: 1rem 0 2rem;
     align-items: center;
 }
 
-.btn-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-    height: 45px;
-}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: var(--color-hover);
-    color: var(--color-bg);
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: .6s;
-    box-shadow: var(--neon-box-shadow);
-    position: relative; 
-    overflow: hidden;
-    z-index: 1;
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 2;
-    background: var(--color-bg);
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    transition:var(--transition);
-}
-
-.btn:hover::before {
-    width: 100%;
-}
-
-.btn:nth-child(2) {
-    background: var(--color-bg);
+span {
     color: var(--color-hover);
 }
 
-.btn:nth-child(2):hover {
-    color: var(--color-bg);
-}
-
-.btn:nth-child(2)::before {
-    background: var(--color-hover);
+.contact span {
+    font-size: 0.9rem;
+    color: #bdbdbd;
 }
 
 .socialIcons{
     margin-top: 8rem;
+    display: flex;
     justify-content: space-between;
     width: 220px;
     height: 40px;
@@ -134,8 +87,24 @@ span {
     width: 100%;
 }
 
-.boy-img {
+.h-image {
+    position: relative;
+}
+
+.img-box {
+    text-align: center;
+}
+
+.img-box img{
     width: 100%;
     max-width: 350px;
-    height: 70%;
+    height: auto;
+    margin-top: -2rem;
+}
+
+.liquid-shape{
+    position: absolute;
+    z-index: -1;
+    top: 1%;
+    left: -25%;
 }

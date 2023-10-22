@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Contact from './Components/Contact/Contact'
 import Services from './Components/Services/Services'
 import './App.css'
+import Skills from './Components/Skills/Skills'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <About />
       <Services />
+      <Skills />
       <Contact />
     </>
   )

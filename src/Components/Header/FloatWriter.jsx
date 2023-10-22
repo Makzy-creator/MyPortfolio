@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const wait = 4;
 
 /** The list of phrases */
-const words = ["Web developer", "Graphic designer"];
+const words = ["Web Developer", "Graphic designer"];
 
 /**
  * Renders a component that animates the display of phrases from an array.

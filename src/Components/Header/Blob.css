@@ -1,0 +1,11 @@
+
+
+.Blob{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.Blob:nth-child(2){
+    filter: blur(30px);
+}

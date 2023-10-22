@@ -12,6 +12,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -25,23 +26,23 @@
   --transition: all 400ms ease;
 
   --neon-box-shadow: 0 0 .5rem #12f7ff;
-  --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
-  0 0 20px rgba(18, 247, 255, 0.3),
-  0 0 30px rgba(18, 247, 255, 0.3),
-  0 0 40px rgba(18, 247, 255, 0.3),
-  0 0 70px rgba(18, 247, 255, 0.3),
-  0 0 80px rgba(18, 247, 255, 0.3),
-  0 0 100px rgba(18, 247, 255, 0.3),
-  0 0 150px rgba(18, 247, 255, 0.3);
+  --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
+  0 0 20px rgba(18, 247, 255, 0.6),
+  0 0 30px rgba(18, 247, 255, 0.6),
+  0 0 40px rgba(18, 247, 255, 0.6),
+  0 0 70px rgba(18, 247, 255, 0.6),
+  0 0 80px rgba(18, 247, 255, 0.6),
+  0 0 100px rgba(18, 247, 255, 0.6),
+  0 0 150px rgba(18, 247, 255, 0.6);
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;
@@ -67,11 +68,6 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 2.5rem;
-}
-
-section {
-  margin-top: 8rem;
-  height: 100vh;
 }
 
 section >h2, section>h5 {
@@ -100,13 +96,61 @@ a:hover {
 .btn {
   width: max-content; /* to fit exactly it's content*/
   display: inline-flex;
-  /* color: var(--color-primary); */
+  justify-content: center;
+  align-items: center;
   padding: 0.75rem 1.2rem;
   border-radius:  5px;
   cursor: pointer;
   border: 2px solid var(--color-hover);
   transition: var(--transition);
+  height: 100%;
+  background: var(--color-hover);
+  color: var(--color-bg);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: .6s;
+  box-shadow: var(--neon-box-shadow);
+  position: relative; 
+  overflow: hidden;
+  z-index: 1;
  }
+
+ .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2;
+  background: var(--color-bg);
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition:var(--transition);
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:nth-child(2) {
+  background: var(--color-bg);
+  color: var(--color-hover);
+}
+
+.btn:nth-child(2):hover {
+  color: var(--color-bg);
+}
+
+.btn:nth-child(2)::before {
+  background: var(--color-hover);
+}
+
+.btn-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 45px;
+}
 
 .btn:hover {
   color: var(--color-hover);

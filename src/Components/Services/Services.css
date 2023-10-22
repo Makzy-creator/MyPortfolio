@@ -1,0 +1,73 @@
+
+.main-text {
+    width:100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-hover);
+}
+
+.main-text h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.main-text span {
+    color: #fdfdfd;
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sectionServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sectionServices serviceBox{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--color-primary-variant);
+    transition: transform .4s;
+    border-radius: 10px;
+}
+
+.serviceBtn {
+    width: auto;
+    justify-content: center;
+}
+
+.serviceBox:hover{
+    transform: translateY(-0.7rem);
+}
+
+.serviceIcon{
+    border: 2px solid var(--color-hover);
+    padding: 2rem;
+    background: var(--color-primary-variant);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: relative;
+    color: var(--color-hover);
+    box-shadow: var(--neon-box-shadow);
+    outline: 3px solid var(--color-primary-variant);
+}
+
+.serviceBox h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.serviceBox p{
+    margin: 0.5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fdfdfd;
+    line-height: 1.6;
+}
